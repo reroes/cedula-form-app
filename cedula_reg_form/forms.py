@@ -20,4 +20,4 @@ class CedulaInfoForm(ModelForm):
 
     class Meta(object):
         model = CedulaInfo
-        fields = ('identificacion_user', 'telefono')
+        fields = ('identificacion_user', 'telefono', 'direccion')
