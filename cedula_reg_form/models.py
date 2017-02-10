@@ -24,6 +24,10 @@ class CedulaInfo(models.Model):
         max_length=200,
     )
     direccion = models.CharField(
-        verbose_name="Telephone",
+        verbose_name="Direccion",
+        max_length=200,
+    )
+    celular = models.CharField(
+        verbose_name="Celular",
         max_length=200,
     )

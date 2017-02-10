@@ -16,8 +16,18 @@ class CedulaInfoForm(ModelForm):
             "required": u"Please tell us your telefono.",
             "invalid": u"We're pretty sure you made that identification.",
         }
+        self.fields['direccion'].error_messages = {
+            "required": u"Please tell us your direccion.",
+            "invalid": u"We're pretty sure you made that identification.",
+        }
+        self.fields['celular'].error_messages = {
+            "required": u"Please tell us your celular.",
+            "invalid": u"We're pretty sure you made that identification.",
+        }
+
+
 
 
     class Meta(object):
         model = CedulaInfo
-        fields = ('identificacion_user', 'telefono', 'direccion')
+        fields = ('identificacion_user', 'telefono', 'direccion', 'celular')
