@@ -28,7 +28,7 @@ from setuptools import setup
 
 setup(
     name='cedula-form-app',
-    version='1.0',
+    version='1.1',
     description='LMS - Indetification Registration Extension Form',
     packages=['cedula_reg_form'],
     install_requires=[

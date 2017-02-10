@@ -12,6 +12,11 @@ class CedulaInfoForm(ModelForm):
             "required": u"Please tell us your identification.",
             "invalid": u"We're pretty sure you made that identification.",
         }
+        self.fields['telefono'].error_messages = {
+            "required": u"Please tell us your telefono.",
+            "invalid": u"We're pretty sure you made that identification.",
+        }
+
 
     class Meta(object):
         model = CedulaInfo
